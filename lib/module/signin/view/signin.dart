@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moovbe/module/homePage/view/homePage.dart';
 import 'package:moovbe/module/splashPage/local_widget/button_widget.dart';
 import 'package:moovbe/module/signin/local_widget/customTxtField.dart';
@@ -18,7 +19,7 @@ class SigninPage extends StatelessWidget {
           Container(
             color: Colors.black,
             width: double.infinity,
-            height: 257,
+            height: 257.h,
             child: CustomPaint(
               painter: LoginDesign(),
               child: Align(
@@ -28,12 +29,12 @@ class SigninPage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const FittedBox(
+                      FittedBox(
                           child: Text(
                         'Welcome',
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 43,
+                            fontSize: 43.sp,
                             fontWeight: FontWeight.w500),
                       )),
                       const FittedBox(
@@ -47,14 +48,13 @@ class SigninPage extends StatelessWidget {
               ),
             ),
           ),
-        
-          const SizedBox(
+          SizedBox(
             height: 20,
           ),
           CustomTxtField(txt: 'Enter Username'),
           CustomTxtField(txt: 'Enter Password'),
-          const SizedBox(
-            height: 220,
+          SizedBox(
+            height: 220.h,
           ),
           ButtonWidget(
             onTap: () {
@@ -65,8 +65,8 @@ class SigninPage extends StatelessWidget {
                 ),
               );
             },
-            width: 300,
-            height: 40,
+            width: 300.w,
+            height: 40.h,
             txt: 'Login',
             btnclr: const Color.fromARGB(255, 242, 19, 3),
             txtclr: Colors.white,
