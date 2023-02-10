@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:moovbe/module/introPage/view/introPage.dart';
+import 'package:moovbe/module/splashPage/view/splashPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       builder: (context, child) {
-        return MaterialApp(home: IntroPage());
+        return MaterialApp(home: SplashPage());
       },
     );
   }

@@ -14,7 +14,7 @@ class LoginDesign extends CustomPainter {
       )
       ..lineTo(
         283.w,
-        257.h,
+        249.h,
       )
       ..lineTo(
         365.w,

@@ -3,15 +3,18 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:moovbe/module/busDetails/local_widget/seat_icon.dart';
 
-class BusDetails extends StatelessWidget {
-  const BusDetails({super.key});
+class BusDetails1X3 extends StatelessWidget {
+  const BusDetails1X3({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text('KSRTC Swift'),
+        title: Text(
+          'KSRTC Swift Scania P-series',
+          style: TextStyle(fontSize: 18),
+        ),
       ),
       body: Column(
         children: [
@@ -41,7 +44,7 @@ class BusDetails extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 15),
                       child: Text(
-                        'Licence no:',
+                        'Licence no:23456ER5',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:moovbe/module/homePage/view/homePage.dart';
-import 'package:moovbe/module/introPage/local_widget/button_widget.dart';
+import 'package:moovbe/module/splashPage/local_widget/button_widget.dart';
 import 'package:moovbe/module/signin/local_widget/customTxtField.dart';
 
 class AddDriver extends StatelessWidget {
@@ -13,9 +13,12 @@ class AddDriver extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text(
-          'Add Driver',
-          style: TextStyle(color: Colors.white),
+        title: Padding(
+          padding: const EdgeInsets.only(left: 80),
+          child: Text(
+            'Add Driver',
+            style: TextStyle(color: Colors.white),
+          ),
         ),
       ),
       body: Column(

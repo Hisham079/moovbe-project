@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:moovbe/module/busDetails/view/busDetails.dart';
-import 'package:moovbe/module/introPage/local_widget/button_widget.dart';
+import 'package:moovbe/module/busDetails/view/busDetail2X2.dart';
+import 'package:moovbe/module/busDetails/view/busDetails1x3.dart';
+import 'package:moovbe/module/splashPage/local_widget/button_widget.dart';
 
 class DetailsTile extends StatelessWidget {
   DetailsTile(
       {super.key,
       required this.btnTxt,
-     
       required this.subTitle,
       required this.title,
       required this.widget});
- 
+
   String title;
   String subTitle;
   String btnTxt;
@@ -40,7 +40,7 @@ class DetailsTile extends StatelessWidget {
                 ),
                 color: Color.fromARGB(255, 188, 188, 188),
               ),
-              child:widget),
+              child: widget),
           SizedBox(
             width: 7,
           ),
@@ -75,7 +75,7 @@ class DetailsTile extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => BusDetails(),
+                  builder: (context) => BusDetails2X2(),
                 ),
               );
             },
